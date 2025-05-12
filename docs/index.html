@@ -12,7 +12,7 @@
     <div class="inner">
       <img src="images/logo.png" alt="Smart Skill Extractor Logo" class="hero-logo">
       <h1>Smart Skill Extractor</h1>
-      <p class="tagline">Instantly extract and organize the key skills from your resume and job postings.</p>
+      <p class="tagline">Instantly extract and organize the key skills from your resume and Handshake job postings.</p>
       <p>
         <a class="btn" href="https://github.com/myronkharkover/CIS3500-chrome-extension">View on GitHub</a>
         <a class="btn" href="https://chrome.google.com/webstore/">Get the Extension</a>
@@ -20,15 +20,44 @@
     </div>
   </header>
 
+  <section class="about">
+    <div class="inner">
+      <h2>About the Extension</h2>
+      <p>
+        <strong>Smart Skill Extractor</strong> is a Chrome extension designed to help job seekers better align their resumes with job postings on Handshake. 
+        By uploading a PDF resume, users can extract and categorize their top skills, which are then matched against the requirements listed in Handshake job posts.
+      </p>
+      <p>
+        The extension uses the ChatGPT API to provide contextual analysis, calculating a match score between your resume and the posting. 
+        Skills are overlaid directly on the job listing, providing a fast and intuitive way to assess your fit — all with zero backend or server dependencies.
+      </p>
+    </div>
+  </section>
+
+  <section class="usecases">
+    <div class="inner">
+      <h2>Use Cases</h2>
+      <ul>
+        <li><strong>Resume Review:</strong> Upload your resume to instantly see which skills stand out and how they’re categorized.</li>
+        <li><strong>Job Matching on Handshake:</strong> While browsing jobs on Handshake, get a visual overlay of skills that match your resume.</li>
+        <li><strong>Match Score Guidance:</strong> Use our ChatGPT-powered match score to evaluate how aligned a job is with your profile.</li>
+        <li><strong>Skill Discovery:</strong> See domain-specific categories like Programming, Cloud, Web, and Tools for better self-assessment.</li>
+        <li><strong>No Backend Required:</strong> All features run locally in your browser—keeping your data private and secure.</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="features">
     <div class="inner">
-      <h2>Features</h2>
+      <h2>Key Features</h2>
       <ul>
-        <li>Upload PDF resumes and extract top skills by category</li>
-        <li>Overlay matching skills on Handshake & LinkedIn job postings</li>
-        <li>Confidence scores based on frequency and position</li>
-        <li>React + TypeScript popup UI</li>
-        <li>No backend required—runs entirely in your browser</li>
+        <li>Upload PDF resumes and extract skills using PDF.js</li>
+        <li>Automatic skill categorization by domain (e.g., Programming, Cloud, Web)</li>
+        <li>Overlay matching skills directly onto Handshake job postings</li>
+        <li>Real-time match score generation using ChatGPT</li>
+        <li>Modern UI built with React, TypeScript, and Vite</li>
+        <li>Client-side storage via Chrome Storage API for synced data across sessions</li>
+        <li>Smart error handling, prompt engineering, and performance optimizations</li>
       </ul>
     </div>
   </section>
@@ -43,15 +72,32 @@
         <li>Build: <code>npm run build</code></li>
         <li>Build Content Scripts: <code>npm run build:content</code></li>
         <li>Load in Chrome: navigate to <code>chrome://extensions</code></li>
-        <li>Enable Developer mode & "Load unpacked" → select the <code>dist</code> folder</li>
+        <li>Enable Developer mode & “Load unpacked” → select the <code>dist</code> folder</li>
       </ol>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="inner">
+      <h2>Features & Development Highlights</h2>
+      <ul>
+        <li>PDF resume parsing and skill extraction</li>
+        <li>Domain-based skill classification (e.g., Programming, Cloud)</li>
+        <li>Overlay of matched skills on Handshake job listings via content scripts</li>
+        <li>ChatGPT integration for job-relevance analysis and match score generation</li>
+        <li>Popup UI design with file upload, extraction feedback, and skill listing</li>
+        <li>Data storage and syncing via Chrome's local storage API</li>
+        <li>Efficient build pipeline using Vite and TypeScript</li>
+        <li>Error handling, persistence across sessions, and frontend testing</li>
+      </ul>
+      <p><strong>Team Members:</strong> Emily Yu, Mudit Marwaha, Myron Kharkover, Praise Ndlovu</p>
     </div>
   </section>
 
   <footer>
     <div class="inner">
-      <p>&copy; 2024 Smart Skill Extractor</p>
+      <p>&copy; 2024 Smart Skill Extractor. Built with privacy, precision, and students in mind.</p>
     </div>
   </footer>
 </body>
-</html> 
+</html>
